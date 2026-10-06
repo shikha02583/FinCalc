@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
@@ -8,6 +9,7 @@ import LoanComparison from "./components/LoanComparison";
 import LoanEligibility from "./components/LoanEligibility";
 import CurrencyConverter from "./components/CurrencyConverter";
 import CalculationHistory from "./components/CalculationHistory";
+import heroImage from "./assets/hero.png";
 import "./App.css";
 
 /* =========================
@@ -345,7 +347,7 @@ function App() {
           <section className="welcome-card">
 
             <img
-              src="/src/assets/hero.png"
+              src={heroImage}
               alt=""
               className="welcome-background"
             />
