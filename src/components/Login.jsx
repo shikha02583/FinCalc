@@ -29,9 +29,8 @@ function Login({ onLogin, onSignup, onBack }) {
           }),
         }
       );
-const responseText = await response.text();
 
-const data = await response.json();
+      const data = await response.json();
 
       if (!response.ok) {
         alert(data.message || "Login failed.");
